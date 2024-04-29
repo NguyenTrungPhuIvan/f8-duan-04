@@ -53,6 +53,7 @@ a {
     color: #ff5b2e;
     font-size: 1.6rem;
     font-weight: 500;
+    transition: all 0.25s;
 }
 .btn:hover {
     background: #ff5b2e;
@@ -516,7 +517,8 @@ img {
 
 .services {
     margin-top: 190px;
-    padding: 68px;
+    padding-top: 68px;
+    padding-bottom: 100px;
     background: #fff6ed;
 }
 .services__sub-title {
@@ -579,6 +581,10 @@ img {
     font-size: 1.2rem;
     font-weight: 400;
 }
+.services__item-link:hover {
+    color: #000958;
+    font-weight: 600;
+}
 
 .services__main-img {
     position: relative;
@@ -602,4 +608,90 @@ img {
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
+}
+/*================= Staff =================*/
+.staff {
+    margin-top: 130px;
+}
+.staff__title {
+    text-align: center;
+    margin-top: 15px;
+}
+.staff__sub-title {
+    display: block;
+    text-align: center;
+}
+.staff__row {
+    margin-top: 78px;
+    display: flex;
+    gap: 70px;
+}
+.staff__staff {
+    position: relative;
+}
+.staff__bg-avatar {
+    position: relative;
+    width: 234px;
+    height: 266px;
+    border-radius: 50%;
+    background: red;
+}
+.staff__staff:nth-of-type(1) .staff__bg-avatar {
+    background: linear-gradient(#90ccff, #59a8eb);
+}
+.staff__staff:nth-of-type(2) .staff__bg-avatar {
+    background: linear-gradient(#ff997e, #f3752e);
+}
+.staff__staff:nth-of-type(3) .staff__bg-avatar {
+    background: linear-gradient(#fabf3e, #ffa14a);
+}
+.staff__staff:nth-of-type(4) .staff__bg-avatar {
+    background: linear-gradient(#5bd6e2, #00a7cc);
+}
+
+.staff__bg-avatar img {
+    bottom: 0;
+
+    position: absolute;
+    border-radius: 47%;
+}
+.staff__figcaption {
+    margin-top: 34px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+.staff__name {
+    color: #000958;
+    font-family: "Sora", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.staff__sub-name {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+.staff__staff-deco {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.staff__staff-deco-1 {
+    bottom: 80px;
+}
+.staff__staff-deco-2 {
+    top: 0;
+}
+.staff__staff-deco-3 {
+    bottom: 80px;
+}
+.staff__staff-deco-4 {
+    top: 0;
+}
+.staff__btn-bg {
+    margin-top: 48px;
+}
+.staff__btn {
+    position: relative;
+    margin: 0 auto;
 }
