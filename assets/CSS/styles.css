@@ -115,6 +115,23 @@ img {
 .header__btn:hover {
     opacity: 0.7;
 }
+.btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #ff5b2e;
+    color: #ff5b2e;
+    transition: color 0.25s, background-color 0.25s;
+}
+.btn-circle:hover {
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    background: #ff5b2e;
+    color: #fff;
+}
+
 /*================= Hero =================*/
 
 .hero {
@@ -633,7 +650,7 @@ img {
     position: relative;
     width: 234px;
     height: 266px;
-    border-radius: 50%;
+    border-radius: 130px;
     background: red;
 }
 .staff__staff:nth-of-type(1) .staff__bg-avatar {
@@ -653,7 +670,7 @@ img {
     bottom: 0;
 
     position: absolute;
-    border-radius: 47%;
+    border-radius: 130px;
 }
 .staff__figcaption {
     margin-top: 34px;
@@ -796,4 +813,92 @@ img {
 }
 .choice__item-list-noactive {
     opacity: 0.75;
+}
+/*================= review =================*/
+.review {
+    margin-top: 130px;
+}
+.review__row {
+    align-items: center;
+}
+.review__arrrow-bg {
+    margin-left: 76px;
+}
+
+.review__arrrow-bg:nth-of-type(1) {
+    transform: rotate(180deg);
+    margin-left: 0;
+}
+.review__bg-img {
+    margin-left: 44px;
+    position: relative;
+    width: 274px;
+    height: 350px;
+    border-radius: 137px;
+    background: #ffda54;
+}
+.review__bg-img img {
+    position: absolute;
+    bottom: 0;
+    border-radius: 137px;
+}
+.review__desc {
+    margin-top: 24px;
+    width: 553px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55; /* 155.556% */
+}
+.review__main-content {
+    margin-left: 115px;
+}
+.review__name {
+    margin-top: 34px;
+    display: block;
+    position: relative;
+    color: #282828;
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 28px;
+}
+.review__name::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.review__dots {
+    margin: 0 auto;
+    margin-top: 56px;
+
+    display: flex;
+    gap: 8px;
+    width: 72px;
+    height: 8px;
+    position: relative;
+}
+.review__dots::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 8px;
+    border-radius: 999px;
+    background: #ff5b2e;
+}
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #ff5b2e;
 }
