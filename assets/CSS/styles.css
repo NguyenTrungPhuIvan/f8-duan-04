@@ -937,6 +937,9 @@ img {
 .blog__item {
     width: 358px;
 }
+.blog__bg {
+    display: block;
+}
 .blog__item:nth-of-type(2) .blog__bg {
     background: #ff997e;
 }
@@ -968,6 +971,10 @@ img {
     list-style: 1.55;
     font-weight: 600;
     line-height: 1.55;
+    transition: opacity 0.25s;
+}
+.blog__item-title:hover {
+    opacity: 0.75;
 }
 .blog__item-desc {
     margin-top: 16px;
