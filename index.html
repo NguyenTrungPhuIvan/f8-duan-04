@@ -828,10 +828,23 @@
                         has its own private, spacious room and daily individual
                         time in our large play yard.
                     </p>
-                    <desc></desc>
-                    <div class="choice__switch btn">
-                        <span>Monthly</span>
+
+                    <div class="choice__switch">
+                        <input
+                            hidden
+                            type="checkbox"
+                            id="choice__switch-checkbox"
+                            class="choice__switch-checkbox"
+                        />
+                        <label
+                            for="choice__switch-checkbox"
+                            class="choice__switch-btn"
+                        >
+                            <span class="choice__month">Monthly</span>
+                            <span class="choice__yearly">Yearly</span>
+                        </label>
                     </div>
+
                     <div class="row choice__row">
                         <div class="choice__item">
                             <span class="choice__item-sub">Basic</span>
