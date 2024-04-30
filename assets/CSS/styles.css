@@ -14,7 +14,12 @@ body {
     --primary-color: #000958;
     --secondary-color: #656689;
 }
-
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    overflow: hidden;
+}
 a {
     text-decoration: none;
 }
@@ -483,6 +488,9 @@ img {
     font-size: 1.8rem;
     font-weight: 600;
 }
+.vacation__list-title:hover {
+    cursor: pointer;
+}
 .vacation__list-title.vacation__list-title-active {
     color: #000958;
 }
@@ -901,4 +909,190 @@ img {
     height: 8px;
     border-radius: 50%;
     border: 1px solid #ff5b2e;
+}
+
+/*================= Blog =================*/
+.blog {
+    margin-top: 130px;
+}
+.blog__row {
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__sub-title {
+    margin-right: 75px;
+}
+.blog__desc {
+    width: 350px;
+}
+.blog__btn {
+    margin-top: 24px;
+    width: 182px;
+}
+
+.blog__row-list {
+    margin-top: 54px;
+    gap: 48px;
+}
+.blog__item {
+    width: 358px;
+}
+.blog__item:nth-of-type(2) .blog__bg {
+    background: #ff997e;
+}
+.blog__item:nth-of-type(3) .blog__bg {
+    background: #5bd6e2;
+}
+.blog__bg {
+    width: 358px;
+    height: 362px;
+    padding-top: 24px;
+    padding-left: 36px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+.blog__date {
+    color: #fff;
+    font-family: "Sora", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.blog__img {
+    width: 322px;
+    height: 296px;
+    margin-top: 25px;
+}
+.blog__item-title {
+    margin-top: 28px;
+    font-size: 2.2rem;
+    list-style: 1.55;
+    font-weight: 600;
+    line-height: 1.55;
+}
+.blog__item-desc {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+/*================= Footer =================*/
+.footer {
+    position: relative;
+    margin-top: 130px;
+}
+.footer__bg {
+    z-index: -1;
+    position: absolute;
+    background: #fff6ed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 54%;
+}
+.footer__left {
+    padding: 114px 212px 148px 0;
+}
+.footer__form {
+    margin-top: 35px;
+}
+
+.footer__social {
+    margin-top: 68px;
+}
+.footer__form {
+    position: relative;
+    width: 268px;
+}
+
+.footer__form input {
+    width: 268px;
+    height: 46px;
+    padding: 16px 50px 16px 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    opacity: 0.6;
+    background: #fff;
+
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.footer__form .footer__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    min-height: auto;
+    color: #ffffff;
+    background: #ff5b2e;
+    border-radius: 50%;
+}
+.footer__form .footer__btn:hover {
+    color: #ff5b2e;
+    background: #fff;
+}
+.footer__social-title {
+    color: #000958;
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.footer__social-list {
+    margin-top: 16px;
+    display: flex;
+
+    gap: 16px;
+    align-items: center;
+}
+.footer__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    transition: opacity 0.25s;
+}
+.footer__social-item:hover {
+    opacity: 0.75;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.footer__right {
+    margin-top: 52px;
+    margin-right: 37px;
+    margin: 52px 37px 0px 129px;
+    display: grid;
+    grid-template-columns: 226px 226px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 72px;
+    grid-row-gap: 58px;
+}
+
+.footer__right-item,
+.footer__right-item a {
+    padding: 9px 0;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.footer__right-item a:hover {
+    color: #000958;
+}
+.footer__right-item:first-child {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #000958;
+    font-family: "Sora", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.footer__copy {
+    padding-bottom: 48px;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
 }
