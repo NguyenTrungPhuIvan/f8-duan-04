@@ -1041,7 +1041,7 @@ img {
     right: 54%;
 }
 .footer__left {
-    padding: 114px 212px 148px 0;
+    padding: 114px 212px 0 0;
 }
 .footer__form {
     margin-top: 35px;
@@ -1118,7 +1118,7 @@ img {
     margin: 52px 37px 0px 129px;
     display: grid;
     grid-template-columns: 226px 226px;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 200px 150px;
     grid-column-gap: 72px;
     grid-row-gap: 58px;
 }
@@ -1143,6 +1143,7 @@ img {
     font-weight: 600;
 }
 .footer__copy {
+    margin-top: 20px;
     padding-bottom: 48px;
     display: block;
     text-align: center;
