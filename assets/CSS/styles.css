@@ -1030,16 +1030,9 @@ img {
 .footer {
     position: relative;
     margin-top: 130px;
+    background: linear-gradient(to right, #fff6ed 45%, #fffaf5 45%);
 }
-.footer__bg {
-    z-index: -1;
-    position: absolute;
-    background: #fff6ed;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 54%;
-}
+
 .footer__left {
     padding: 114px 212px 0 0;
 }
